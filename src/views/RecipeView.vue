@@ -1,6 +1,34 @@
-<script setup></script>
+    <script setup>
+    import { ref, computed, onMounted } from 'vue'
+    import axios from 'axios'
+    const productList = ref([])
+    onMounted(() => {
+        axios
+        .get('https://fakestoreapi.com/products')
+        .then((response) => {
+            productList.value = response.data
+        })
+    })
+// import TheWelcome from '../components/TheWelcome.vue'
+</script>
 
 <template>
-    <h1>test</h1>
+
+    <main>
+        <RouterLink 
+            v-for="item in productList" 
+            :key="item.id"
+            :to="`/product/${item.id}`"
+        >
+            {{ item.id }}
+            {{ item.title }}
+        </RouterLink>
+    </main>
+    
 </template>
-<style lang="sass" scoped></style>
+
+<style scoped>
+    a{
+    display: block;
+    }
+</style>
