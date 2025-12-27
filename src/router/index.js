@@ -19,14 +19,6 @@ const router = createRouter({
       component: () => import('@/views/AboutView.vue'),
     },
 <<<<<<< HEAD
-     {
-      path: 'mall',
-      name: 'mall',
-      component: () => import('@/views/MallView.vue'),
-=======
-      component: () => import('../views/AboutView.vue'),
->>>>>>> 60a40420824d1747b9b2f99ff6b4dee8075ef34e
-    },
     {
       path: '/timothyTest',
       name: 'timothyTest',
