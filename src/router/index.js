@@ -18,14 +18,15 @@ const router = createRouter({
       component: () => import('@/views/AboutView.vue'),
     },
     {
-      path: '/mall',
-      name: 'mall',
-      component: () => import('@/views/mallView.vue'),
-    },
-    {
       path: '/timothyTest',
       name: 'timothyTest',
       component: () => import('../views/timothyTestView.vue'),
+    },
+    {
+      path: '/timothyTest/:id',
+      name: 'productInfo',
+      props:true,
+      component: () => import('../views/productInfoView.vue'),
     },
     {
       path: '/index',
@@ -36,7 +37,7 @@ const router = createRouter({
       path: '/recipe',
       name: 'recipe',
       component: () => import('../views/RecipeView.vue'),
-    }
+    },
     {
       path: '/recipe/:id',
       name: 'recipe',
