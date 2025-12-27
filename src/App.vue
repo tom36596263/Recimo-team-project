@@ -17,6 +17,7 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/index">首頁</RouterLink>
         <RouterLink to="/faq">FAQ</RouterLink>
         <RouterLink to="/timothyTest">陳彤的頁面</RouterLink>
+        <RouterLink to="/recipe">recipe</RouterLink>
       </nav>
     </div>
   </header>
