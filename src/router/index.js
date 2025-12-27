@@ -36,7 +36,7 @@ const router = createRouter({
       path: '/recipe',
       name: 'recipe',
       component: () => import('../views/RecipeView.vue'),
-    },
+    }
   ],
 })
 
