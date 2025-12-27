@@ -27,6 +27,11 @@ const router = createRouter({
 >>>>>>> 60a40420824d1747b9b2f99ff6b4dee8075ef34e
     },
     {
+      path: '/timothyTest',
+      name: 'timothyTest',
+      component: () => import('../views/timothyTestView.vue'),
+    },
+    {
       path: '/index',
       name: 'index',
       component: () => import('../views/IndexView.vue'),
