@@ -18,6 +18,7 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('@/views/AboutView.vue'),
     },
+<<<<<<< HEAD
      {
       path: 'mall',
       name: 'mall',
@@ -36,6 +37,9 @@ const router = createRouter({
       name: 'index',
       component: () => import('../views/IndexView.vue'),
     },
+=======
+  
+>>>>>>> toung
   ],
 })
 
