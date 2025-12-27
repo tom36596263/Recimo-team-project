@@ -5,16 +5,17 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <!-- <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" /> -->
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <!-- <HelloWorld msg="You did it!" /> -->
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/Mall">About</RouterLink>
         <RouterLink to="/index">首頁</RouterLink>
+        <RouterLink to="/faq">FAQ</RouterLink>
         <RouterLink to="/timothyTest">陳彤的頁面</RouterLink>
       </nav>
     </div>
